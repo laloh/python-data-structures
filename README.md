@@ -32,6 +32,18 @@ into smaller and smaller subproblems until you get to a small enough problem tha
 it can be solved trivially. Usually recursion involves a function calling itself.
 While it may otherwise be very difficult to program.
 
+All recursive algorithms must obey three importan laws:
+
+    1. A recursive algorithm must have a base case.
+        Is typically a problem that is small enough to solve directly
+    2. A recursive algorithm must change its state and move toward the base case
+        Means that some data that the algorithm is using is modified, Usually the data that
+        represents our problem gets smaller in some way.
+    3. A recursive algorithm must call itself, recursively.
+        
+    
+   
+
 
 
 
