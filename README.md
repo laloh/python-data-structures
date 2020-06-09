@@ -122,11 +122,26 @@ One note about shifting versus exchanging is also important, In general, a shift
 approximetely a third of the processing work of an exchange since only one assignment is performed.
 In benchmark studies, insertion sort will show very good performance.
 
-**Shell Sort**
+**Shell Sort [Requires more study]**
 
 Sometimes called the "diminishing increment sort", improves on the insertion sort by breaking the 
 original list into a number of smaller sublist, each of which is sorted using an insertion sort.
 The unique way that these sublists are chosen is the key to the shell sort.
 Instead of breaking the list into sublists of contiguous items, the shell sort uses an increment i,
 sometimes called the gap, to create a sublist by choosing all items that are i items apart.
+
+**Merge Sort**
+
+Merge sort is a recursive algorithm that continually splits a list in half.
+If the list is empty or has one item, it is sorted by definition (the base case).
+If the list has more than one item, we split the list and recursively invoke a merge
+sort on both halves. Once the two halves are sorted, the fundamental operation, called
+merge, is performed. Merging is the process of taking two smller sorted lists and
+combining them together into a single, sorted, new list.
+
+**Quick Sort**
+
+The quick sort uses divide and conquer to gain the same advantages as the merge sort, while not
+using additional storage. As a trade-off, however, it is possible that the list may not be
+divided in half. When this happends, we will see that performance is diminished.
 
